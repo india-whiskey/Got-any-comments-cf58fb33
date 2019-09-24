@@ -14,15 +14,19 @@
     <input type="text" name="name" id="name" required>
   </div>
   <h2>Email</h2>
-<form action="" method="get" class="form-example">
   <div class="form-example">
     <label for="name">email: </label>
     <input type="text" name="name" id="name" required>
+  </div>
     <h2>telefoonnummer</h2>
-<form action="" method="get" class="form-example">
   <div class="form-example">
-    <label for="name">0612345678: </label>
-    <input type="text" name="name" id="name" required>
+<label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+
+  </div>
 
     <div>
     <label for="pet-select">Choose a pet:</label>
@@ -38,6 +42,25 @@
 </select>
 </div>
 
+<p>vindt je game of thrones leuk?</p>
+
+<div>
+  <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">ja</label>
+</div>
+<div>
+  <input type="checkbox" id="nee" name="nee">
+  <label for="nee">nee</label>
+</div>
+
+<div><label for="story">opmerkingen:</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="33">
+heeft u nog opmerkingen?
+</textarea>
+</div>
 </form>
 </body>
 </html>
